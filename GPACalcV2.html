@@ -6,36 +6,47 @@
 
 <style>
 body{
-    height: 100%;
-    overscroll-behavior: none;
-    background-image: linear-gradient(to bottom, rgb(36, 34, 34) , black);
-}
+        height: 100%;
+        overscroll-behavior: none;
+        background-image: linear-gradient(to bottom, rgb(84, 113, 117) , rgb(181, 118, 118));
+    }
 
-.center {
-  margin: auto;
-  width: 50%;
-  padding: 50px;
-}
+  html{
+      scroll-behavior: smooth;
+  }
 
-.center1 {
-  margin: auto;
-  width: 20%;
-  padding: 20px;
-}
+  h1{
+      color: wheat;
+      text-align: left;
+      font-size: 50px;
+      font-family: Arial, Helvetica, sans-serif;
+  }
 
-.topnav {
-  overflow: hidden;
-  background-color: rgb(42, 48, 53);
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  position:fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  box-shadow: 0 5px 8px -3px black;
-  height: 60;
+  .center {
+      margin: auto;
 
-}
+      padding-left: 10px;
+      margin-top: 80px;
+  }
+
+  .center1 {
+      margin: auto;
+      width: 20%;
+      padding: 20px;
+  }
+
+  .topnav {
+        overflow: hidden;
+        background-color: rgb(100, 162, 223);
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        position:fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 5px 8px -3px black;
+        height: 65;
+    }
 
 .topnav a {
   float: left;
@@ -128,11 +139,11 @@ button:hover{
 
 <body>
     <div class="topnav"> 
-        <input onclick="location.href='index.html';"width = "100" height = "55" style = "padding-left: 10; padding-top: 5; float: left;" type="image" src="img/Logo1.png" />
+        <input onclick="location.href='indexV2.html';"width = "100" height = "55" style = "padding-left: 10; padding-top: 5; float: left;" type="image" src="img/Logo1.png" />
         <div class="dropdown">
-            <button onclick="location.href = 'Games.Apps.html';" class="dropbtn" >Games/Apps</button>  
-            <button onclick="location.href = 'Settings.html';" class="dropbtn" >Settings</button>  
-            <button onclick="location.href = 'Updates.html';" class="dropbtn" >Updates</button>  
+            <button onclick="location.href = 'Games.AppsV2.html';" class="dropbtn" >Games/Apps</button>  
+            <button onclick="location.href = 'SettingsV2.html';" class="dropbtn" >Settings</button>  
+            <button onclick="location.href = 'UpdatesV2.html';" class="dropbtn" >Updates</button>  
         </div>
     </div>
         

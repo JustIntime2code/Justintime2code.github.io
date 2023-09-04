@@ -1,0 +1,216 @@
+<meta name = "viewport" content = "width= device-width, initial-scale=1.0">
+<head>
+    <title>JDev-Low/High</title>
+    <link rel="shortcut icon" type="image/png" href="img/Favicon.png">
+
+<style>
+body{
+    height: 100%;
+    overscroll-behavior: none;
+    background-image: linear-gradient(to bottom, rgb(36, 34, 34) , black);
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 50px;
+}
+
+.center1 {
+  margin: auto;
+  width: 20%;
+  padding: 20px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(42, 48, 53);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 5px 8px -3px black;
+  height: 60;
+
+}
+
+.topnav a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 16px;
+  background-color: inherit;
+  font-family: monospace;
+  margin: 0;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+footer{
+    text-align: center;
+  padding: 3px;
+  background-color: rgb(35, 33, 33);
+  color: white;
+    display: block;
+    position: absolute;
+   left: 0;
+   bottom: -15%;
+   width: 99%;
+}
+
+.button1{
+    color: black;
+    background-color: bisque;
+    text-align: center;
+    padding: 12px 16px;
+    text-align: center; 
+    font-size: 20px;
+    width: 90px; 
+    height: 60px;
+}
+
+.button1:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+
+
+}
+
+.right {
+  float: right;
+  width: 200px;
+  padding: 10px;
+}
+
+button:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.dropbtn:hover{
+    background-color: black;
+}
+
+
+</style>
+</head>
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="topnav"> 
+        <input onclick="location.href='index.html';"width = "100" height = "55" style = "padding-left: 10; padding-top: 5; float: left;" type="image" src="img/Logo1.png" />
+        <div class="dropdown">
+            <button onclick="location.href = 'Games.Apps.html';" class="dropbtn" >Games/Apps</button>  
+            <button onclick="location.href = 'Settings.html';" class="dropbtn" >Settings</button>  
+            <button onclick="location.href = 'Updates.html';" class="dropbtn" >Updates</button>  
+        </div>
+    </div>
+        
+        <h1 style = "margin: 100px; color: white; text-align: center;">Higher Or Lower</h1>
+        
+  <p style = "color: white; font-size: 21px;" id = "turns"></p>
+  <button class = "button1"  id = "StartButton" onclick="Start()">Start</button>
+  <input style = " font-size: 30px; height: 60px; width: 180px; float: left;" type="number" id="input" >
+  <p style= " color: white; font-size: 20px;" id = "H/L"></p>
+  <h3 style = "color: white;">Rules</h3>
+  <p style="color: white;  padding-bottom: 20px; font-size: 20px; ">A random number will be generated once started. After you press start type a random number from 9 - 100 and then press enter. After this the game will tell you if your number is higher, lower or the correct number to the randomly generated number. Try to guess the number without using too much turns.</p>
+
+  <footer>
+    <p>Author: Justin Nam</p>
+    <a href="mailto:jdevstudios1@gmail.com" style = "color: white;">jdevstudios1@gmail.com</a></p>
+</footer>
+
+    <script>
+        const inputElement = document.getElementById("input");
+        const Turns = document.getElementById("turns");
+        const SB = document.getElementById("StartButton");
+        const HL = document.getElementById("H/L");
+        inputElement.disabled = true;
+        let randnum = 0;
+        let turnnum = 0;
+
+        function Start()
+        {
+            
+            SB.disabled = true;
+            
+            inputElement.disabled = false;
+            randnum = Math.floor(Math.random() * 100);
+           
+        }
+
+        inputElement.addEventListener("keypress", function(event)
+        {
+            if(event.key === "Enter")
+            {
+                event.preventDefault();
+                checkInput();
+            }
+        });
+
+        function checkInput()
+            {
+            const input = inputElement.value.trim();
+            if(input == randnum)
+            {
+                HL.textContent = "You got the number.";
+                inputElement.disabled = true;
+            }
+            if(input < randnum)
+            {
+                HL.textContent = "Your number is lower then the randomly generated number. Try again";
+                turnnum += 1;
+                Turns.textContent = "Turns:" + turnnum;
+            }
+            if(input > randnum)
+            {
+                HL.textContent = "Your number is higher then the randomly generated number. Try again";
+                turnnum += 1;
+                Turns.textContent = "Turns:" + turnnum;
+            }
+            }
+
+    </script>
+</body>
+</html>

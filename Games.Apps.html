@@ -1,3 +1,4 @@
+<meta name = "viewport" content = "width= device-width, initial-scale=1.0">
 <head>
     <title>JDev-Games/Apps</title>
     <link rel="shortcut icon" type="image/png" href="img/Favicon.png">
@@ -34,7 +35,7 @@
 
     .topnav {
   overflow: hidden;
-  background-color: #353745;
+  background-color: rgb(42, 48, 53);
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   position:fixed;
@@ -74,21 +75,22 @@
 
 .centerbottom{
     float: left;
-
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-top: 50;
 }
 
 footer{
-    text-align: center;
-  padding: 3px;
-  background-color: rgb(35, 33, 33);
-  color: white;
-    display: block;
-    position: absolute;
-   left: 0;
-   bottom: -60%;
-   width: 99%;
-}
+        text-align: center;
+        padding: 3px;
+        background-color: rgb(35, 33, 33);
+        color: white;
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -60%;
+        width: 99%;
+        font-family: 'Courier New', Courier, monospace;
+    }
 
 .button1{
     color: black;
@@ -111,21 +113,129 @@ button:hover{
 }
 
 .border{
-    border-bottom: 5px solid lightcyan;
+    border-bottom:2px solid rgb(146, 158, 158);
 }
 
+@media only screen and (max-width: 620px){
+  h1{
+    color: rgb(242, 228, 201);
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    p{
+        color: rgba(243, 235, 217, 0.826);
+        margin-top: 0;
+        font-size: 15px;
+    }
 
+.center {
+    float: left;
+    padding-left: 10;
+    padding-top: 60;
+    
+}
+
+.center1 {
+  margin: auto;
+  width: 20%;
+  padding: 20px;
+}
+
+    .topnav {
+  overflow: hidden;
+  background-color: rgb(42, 48, 53);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 5px 8px -3px black;
+  height: 60;
+
+}
+
+.topnav a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropbtn {
+  cursor: pointer;
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 16px;
+  background-color: inherit;
+  font-family: monospace;
+  margin: 0;
+}
+
+.centerbottom{
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 50;
+}
+
+footer{
+        text-align: center;
+        padding: 3px;
+        background-color: rgb(35, 33, 33);
+        color: white;
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -60%;
+        width: 99%;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+.button1{
+    color: black;
+    background-color: bisque;
+    text-align: center;
+    padding: 12px 16px;
+    font-size: 11px;
+  float: right;
+}
+
+.right {
+  float: right;
+  width: 200px;
+  padding: 10px;
+}
+
+button:hover{
+    color: white;
+    background-color: black;
+}
+
+.border{
+    border-bottom:2px solid rgb(146, 158, 158);
+}
+}
 
 </style>
 </head>
+<!DOCTYPE html>
 <html>
 <body>
 
     <div class="topnav"> 
-        <input onclick="location.href='index.html';"width = "100" height = "55" style = "padding-left: 10; padding-top: 5; float: left;" type="image" src="Logo1.png" />
+        <input onclick="location.href='index.html';"width = "100" height = "55" style = "padding-left: 10; padding-top: 5; float: left;" type="image" src="img/Logo1.png" />
         <div class="dropdown">
             <button onclick="location.href = 'Games.Apps.html';" class="dropbtn" >Games/Apps</button>  
-            <button onclick="location.href = 'Games.Apps.html';" class="dropbtn" >Settings</button>  
+            <button onclick="location.href = 'Settings.html';" class="dropbtn" >Settings</button>  
             <button onclick="location.href = 'Updates.html';" class="dropbtn" >Updates</button>  
         </div>
     </div>
@@ -136,10 +246,12 @@ button:hover{
          <p>Lots of fun games and useful apps for FREE.</p>
       </div>
       <div class = "centerbottom">
-        <a href = "FoodGen.html" ><img src="fork.png" onmouseover="this.src='ForkHover.png';" onmouseleave="this.src='fork.png';" width = "70" height = "70" style = "padding-left: 10; padding-top: 5;"></a> 
-        <figcaption style = "text-align: center; color: white;">Food Gen</figcaption>
-        <a href = "GPACALC.html" ><img src="Calc.png" onmouseover="this.src='Calc.png';" onmouseleave="this.src='Calc.png';" width = "70" height = "70" style = "padding-left: 10; padding-top: 5;"></a> 
-        <figcaption style = "text-align: center; color: white;">GPA Calc</figcaption>
+        <a href = "GPACALC.html" ><img src="img/Calc.png" onmouseover="this.src='img/HoverCalc.png';" onmouseleave="this.src='img/Calc.png';" width = "70" height = "80" style = "padding-left: 10; padding-top: 5;"></a> 
+        <figcaption style = "padding-right: 30; text-align: center; color: white;">GPA Calc</figcaption>
+        <a href = "SpeedType.html" ><img src="img/Keyboard.png" onmouseover="this.src='img/hoverKeyboard.png';" onmouseleave="this.src='img/Keyboard.png';" width = "85" height = "50" style = "padding-left: 10; padding-top: 5;"></a> 
+        <figcaption style = "padding-right: 10px; padding-left: 2px; text-align: center; color: white;">Speed Type</figcaption>
+        <a href = "Up.Down.html" ><img src="img/UpDown.png" onmouseover="this.src='img/UpHover.png';" onmouseleave="this.src='img/UpDown.png';" width = "80" height = "55" style = "padding-left: 10; padding-top: 5;"></a> 
+        <figcaption style = "font-size: 15px; padding-left: 9px; text-align: center; color: white;">Lower or Higher</figcaption>
     </div>
     </div>
 
