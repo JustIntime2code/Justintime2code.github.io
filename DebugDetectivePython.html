@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JDev - DebugDetective</title>
+    <link rel = "stylesheet" href = "DebugDetectiveStyle.css">
+    <link rel="shortcut icon" type="image/png" href="img/Favicon.png">
+</head>
+<body>
+    <div class = "NavBar">
+        <div class = "Header">
+            <div class = "logo">
+                <h1>JDev</h1>
+            </div>
+            <div class = "Buttons">
+                <button>
+                    <div class = "A">
+                    <a style = "padding-left: 5px; padding-right: 5px;" href = "index.html">Home</a>
+                    <a style = "padding-left: 5px; padding-right: 5px;" href = "Blog.html">Blog</a>
+                    <a style = "padding-left: 5px; padding-right: 5px;" href = "#AboutMe">About me</a>
+                    <a style = "padding-left: 5px; padding-right: 5px;" href = "Games.html">Games</a>
+                    </div>
+                </button>
+            </div>
+            <div class = "RightButtons">
+                <button>
+                    <div class = A>
+                    <a style = "padding-left: 5px; padding-right: 5px;" href = "https://github.com/JustinDevN/JustinDevN.github.io">Github</a>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+<div style = "float: left;">
+    <div class = "stage">
+    
+        <h1>Debug Detective - Python</h1>
+        <p>Rules: Copy and paste the code from the snippet into the input box and attempt to find any bugs or minor mistakes, in the code. Indents in python code MUST be replaced with a space or it will not work. </p>
+        <div style = "align-items:center;">   
+            <button onclick="EasyMode()" style = "height: 50px; width: 90px; background-color: lightgreen; font-size: 20px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Easy</button>
+            <button onclick="NormalMode()" style = "height: 50px; width: 90px; background-color: rgb(239, 195, 106); font-size: 20px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Normal</button>
+            <button onclick="HardMode()" style = "height: 50px; width: 90px; background-color: rgb(239, 106, 106); font-size: 20px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Hard</button>
+            <p id = "Result"></p>
+            <button onclick="Summit()">Summit</button>    
+        </div> 
+        <div class = "CodeSnippet"> <pre><code id ="CodeSnippet"></code></pre> </div>
+        <textarea id = "PlayerInput"></textarea>
+        
+    </div>
+</div>
+</body>
+<script src="DebugDetectivePython.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EBHPKSQF36"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EBHPKSQF36');
+</script>
+</html>

@@ -1,0 +1,203 @@
+    body{
+        height: 150%;
+        overscroll-behavior: none;
+        background-color: rgb(35, 35, 35);
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    h1{
+        color: rgb(248, 248, 248);
+        font-size: 40px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #Welcome{
+        width: 100%;
+        height: 100%;
+        padding: 100%;
+        background-color: black;
+    }
+
+
+
+    .modal {
+        width: 900px;
+        height: 200px;
+        background-color: black;
+        border-radius: 5px;
+        border-color: rgb(87, 87, 87);
+        border-style: solid;
+        font-size: 20px;
+      }
+      
+      
+      @keyframes typing {
+        from{opacity: 100%;}
+        0% { width: 0;}
+        50% {width: 100%;}
+        55% {width: 100%;}
+        60% {width: 100%;}
+        100% {width: 100%;}
+
+      }
+
+      
+      .typing-animation {
+        overflow: hidden;
+        /*border-right: 0.08em solid #ffffff; /* Adjust the color and thickness as needed */
+        content:"!";
+        white-space: nowrap;
+        animation: typing 12s steps(100);
+        color: rgb(0, 159, 0);
+      }
+
+      @keyframes blink {
+        from, to {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      }
+      
+      .typing-animation::after {
+        content: "|";
+        color: rgb(255, 255, 255);
+        animation: blink 1s infinite;
+      }
+
+      
+
+    .NavBar {
+        width: 100%;
+        background-color: rgb(43, 43, 43);
+        top: 0%;
+        left: 0%;
+        z-index: 900;
+        position: fixed;
+       
+    }
+
+    .Header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 160px;
+        padding-right: 160px;
+
+    }
+
+    .Logo{
+        text-align: left;
+        
+    }
+
+    button{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: white;
+        justify-content: space-between;
+        
+
+    }
+
+    .A{
+        font-size: 20px;
+
+    }
+
+    a{
+        text-decoration: none;
+        color: inherit;
+
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .A :hover{
+        color: inherit;
+        text-decoration: line-through;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: black;
+    }
+
+    h5{
+        color:white;
+        font-size: 30px;
+    }
+
+    .quoteGen{
+        padding-left: 10%;
+        padding-top: 5%;
+        height: 400px;
+        background-image: linear-gradient(rgb(129, 129, 129), rgb(85, 207, 251));
+    }
+
+    .Buttons{
+        font-size: 20px;
+    }
+
+
+    .WelcomePage{
+        padding: 10%;
+        color:white;
+        
+    }
+
+    .WelcomeBox{
+        border-style: solid;
+        width: 300px;
+        height: 60px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .WelcomeBox :hover{
+        background-color: black;
+        color: aqua;
+    }
+
+    #AboutMe{
+        color: white;
+        padding: 10%;
+    }
+    
+    footer{
+        width: 100%;
+        height: 230px;
+        background-color: rgb(43, 43, 43);
+        font-size: 15px;
+        color: white;
+
+
+    }
+
+    .colum1{
+
+    }
+
+    .Colums{
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        z-index: 900;
+        padding-left: 470px;
+        padding-right: 70px;
+    }
+
+    .ColumNum2{
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        z-index: 900;
+        padding-right: 70px;
+    }
+
+    .FooterJDEV{
+    }
