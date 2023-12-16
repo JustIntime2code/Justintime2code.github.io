@@ -8,77 +8,84 @@
     <link rel="shortcut icon" type="image/png" href="img/Favicon.png">
 </head>
 <body>
-
-    <div class = "flex">
-        <div class = "NavBar">
-            <div class = "Header">
-                <div class = "logo">
-                    <h1>JDev</h1>
-                </div>
-                <div class = "Buttons">
-                    <button>
-                        <div class = "A">
+    <!-- Top Navbar -->
+    <div class = "NavBar">
+        <div class = "Header">
+            <div class = "logo">
+                <h1>JDev</h1>
+            </div>
+            <div class = "Buttons">
+                <button>
+                    <div class = "A">
                         <a href = "index.html">Home</a>
                         <a href = "Blog.html">Blog</a>
                         <a href = "#AboutMe">About me</a>
                         <a href = "Games.html">Games</a>
-                        </div>
-                    </button>
-                </div>
-                <div class = "RightButtons">
-                    <button>
-                        <div class = "A">
-                            <a href = "https://github.com/JustinDevN/JustinDevN.github.io">Github</a>
-                        </div>
-                    </button>
-                </div>
+                    </div>
+                </button>
+            </div>
+            <div class = "RightButtons">
+                <button>
+                    <div class = "A">
+                        <a href = "https://github.com/JustinDevN/JustinDevN.github.io">Github</a>
+                    </div>
+                </button>
             </div>
         </div>
-        <div class = "mainPage">
-            <div class = "WelcomePage">
-                <div class = "WelcomeBox">
-                    <h2>Hello, My name is Justin N.</h2>
-                </div>
-                <div class = "modal">
-                    <p class = "typing-animation" id="typing-animation">Welcome(안녕하새요)...</p>
-                </div>
-            </div>
-            <div class = "quoteGen">
-                <h5 style = "font-size: 40px;">My Motivational Quote</h5>
-                <p id = "quote-text" style = "font-size: 30px; color: white;">"The world is big, but your future is bigger." - Justin Nam</p>
-                <p id = "quote-text" style = "font-size: 30px; color: white;">"When you think it's over, it's only the beginning." - Justin Nam</p>
-            </div>
-        </div>
-        <div id = "AboutMe">
-            <h2>About Me</h2>
-            <p>Hello, my name is Justin Nam, and I am a student studying computer science, web design, and cyber security.</p>
-
-                <div style = " padding-top: 10px;">
-                <h3>Skills</h3>
-                <p>1. Coding - C#, C, Java, HTML/CSS/JavaScript, Python</p>
-                <p>2. Sports - Fencing, Tennis</p> 
-                <p>3. Music - Guitar</p>
-                <p>4. Finance - Saving, Investing</p>
-                <p>5. Art - Pixel art, Adobe Photoshop, Adobe Premiere, Adobe Illustrator</p>
-                </div>
-
-        </div>
-        <footer>
-            <div class = "FooterJDEV">
-                <h2 style = "font-size: 40px;">JDev</h2>
-            </div>
-            <div class = "Colums">
-                <div class = "colum1">
-                    <h3>Top Blogs</h3>
-                    <a href = "Blog_1.html">Best ways to study and get A's</a>
-                </div>
-                <div class = "colum2">
-                    <h3>Top Games</h3>
-                    <a href = "DebugDetective.html">Debug Detective</a>
-                </div>
-            </div>
-        </footer>
     </div>
+    <!-- Main Page -->
+    <div class = "mainPage">
+        <div class = "WelcomePage">
+            <div class = "WelcomeBox">
+                <h2>Hello, My name is Justin N.</h2>
+            </div>
+            <div class = "modal">
+                <p class = "typing-animation" id="typing-animation">Hello(안녕하새요)...</p>
+            </div>
+        </div>   
+    </div>
+    <div class = "QutoeArea">
+        <h5 class = "quote-Header">My Motivational Quotes</h5>
+        <p id = "quote-text" >"The world is big, but your future is bigger."</p>
+        <p id = "quote-text" >"When you think it's over, it's only the beginning."</p>
+    </div>
+    <div id = "AboutMe">
+        <h2>About Me</h2>
+        <p>Hello, my name is Justin Nam, and I am a student studying in the field of computer science, web design, and cyber security.</p>
+
+        <div class = "AboutMe-Skill-Coding">
+            <h3>Coding Skills</h3>
+            <div style = "font-family: Silkscreen;" class = "AboutMe-Skill-Coding-Snippet">
+                <p>1. C#</p>
+                <div class = "CSharp-Skill-Bar-Border"><div class = "CSharp-Skill-Bar">Advance +5 years</div></div>
+                <p>2. C</p>
+                <div class = "C-Skill-Bar-Border"><div class = "C-Skill-Bar">Beginner +1 year</div></div>
+                <p>3. Java</p>
+                <div class = "Java-Skill-Bar-Border"><div class = "Java-Skill-Bar">Intermediate + 5 years</div></div>
+                <p>4. HTML/CSS/JavaScript</p>
+                <div class = "HCJ-Skill-Bar-Border"><div class = "HCJ-Skill-Bar">Advance +5 years</div></div>
+                <p>5. Python</p>
+                <div class = "Python-Skill-Bar-Border"><div class = "Python-Skill-Bar">Advance + 3 years</div></div>
+            </div>
+        </div>
+
+        <div class = "AboutMe-Skill-SM">
+            <h3>Sport/Music Skills</h3>
+            <div style = "font-family:Caveat;" class = "AboutMe-Skill-SM-Snippet">
+                <p>1. Fencing</p>
+                <div class = "Fencing-Skill-Bar-Border"><div class = "Fencing-Skill-Bar">Intermediate + 1 year</div></div>
+                <p>2. Tennis</p>
+                <div class = "Tennis-Skill-Bar-Border"><div class = "Tennis-Skill-Bar">Beginner + 1 year</div></div>
+                <p>3. Guitar</p>
+                <div class = "Guitar-Skill-Bar-Border"><div class = "Guitar-Skill-Bar">Intermediate + 5 years</div></div>
+            </div>
+        </div>               
+    </div>
+    <footer>
+        <div class = "FooterJDEV">
+            <h1 >JDev</h1> <h2> &copy; Copyright - Justin Nam</h2>
+        </div>
+    </footer>
 </body>
 <script src="index.js"></script>
 <!-- Google tag (gtag.js) -->
@@ -90,5 +97,8 @@
 
   gtag('config', 'G-EBHPKSQF36');
 </script>
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
 </html>

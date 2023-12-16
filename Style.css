@@ -1,203 +1,540 @@
-    body{
-        height: 150%;
-        overscroll-behavior: none;
-        background-color: rgb(35, 35, 35);
+/* Main*/
+body{
+    height: 150%;
+    overscroll-behavior: none;
+    background-color: rgb(35, 35, 35);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    color: rgb(248, 248, 248);
+    font-size: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*-------------------------------*/
+/* The Terminal Style Hello Box*/
+.modal {
+    width: 800px;
+    height: 200px;
+    background-color: black;
+    border-radius: 5px;
+    border-color: rgb(87, 87, 87);
+    border-style: solid;
+    font-size: 20px;
+}  
+@keyframes typing {
+    from{opacity: 100%;}
+    0% { width: 0;}
+    50% {width: 100%;}
+    55% {width: 100%;}
+    60% {width: 100%;}
+    100% {width: 100%;}
+}
+.typing-animation {
+    overflow: hidden;
+    content:"!";
+    white-space: nowrap;
+    animation: typing 12s steps(100);
+    color: rgb(0, 159, 0);
+}
+@keyframes blink {
+    from, to {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+.typing-animation::after {
+    content: "|";
+    color: rgb(255, 255, 255);
+    animation: blink 1s infinite;
+}
+
+/*-------------------------------*/
+/*Main Page*/
+.NavBar {
+    width: 100%;
+    background-color: rgb(43, 43, 43);
+    top: 0%;
+    left: 0%;
+    z-index: 900;
+    position: fixed;
+}
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+.Logo{
+    text-align: left;
+}
+button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    justify-content: space-between; 
+}
+.A{
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.A :hover{
+    color: inherit;
+    text-decoration: line-through;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: black;
+}
+h5{
+    color:white;
+    font-size: 30px;
+}
+
+/*-------------------------------*/
+/*QuoteArea*/
+.QutoeArea{
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding-top: 5%;
+    height: 400px;
+    background-color: rgb(206, 206, 206);
+    text-align: center;    
+}
+#quote-text{
+    color:rgb(0, 0, 0);
+    font-size: 25px;
+}
+.quote-Header{
+    font-size: 40px;
+    color: black;
+}
+.Buttons{
+    font-size: 20px;
+}
+.WelcomePage{
+    padding: 10%;
+    color:white;
+}
+.WelcomeBox{
+    border-style: solid;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    border-radius: 5px;
+}
+.WelcomeBox :hover{
+    background-color: black;
+    color: aqua;
+}
+
+/*-------------------------------*/
+/* About Me*/
+#AboutMe{
+    color: white;
+    padding: 10%;
+}
+.AboutMe-Skill-Coding{
+    padding-top: 10px;
+}
+
+.AboutMe-Skill-Coding-Snippet{
+    width: 700px;
+    height: 450px;
+    background-color: rgb(206, 206, 206);
+    color: black;
+    border-radius: 15px;
+    border-style: solid;
+    padding-left: 2%;
+}
+.AboutMe-Skill-SM{
+    padding-top: 10px;
+}
+.AboutMe-Skill-SM-Snippet{
+    width: 700px;
+    height: 320px;
+    background-color: rgb(206, 206, 206);
+    color: black;
+    border-radius: 15px;
+    border-style: solid;
+    padding-left: 2%;
+    font-size: 20px;  
+}
+.CSharp-Skill-Bar-Border{
+        border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
+    }
+    .CSharp-Skill-Bar{
+       color: white; text-align: center; border-radius: 5px; width: 330px; height: 28px; background-color: rgb(105, 5, 164); border-style: solid;
+    }
+    .C-Skill-Bar-Border{
+        border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
+    }
+    .C-Skill-Bar{
+       font-size: 11px; color: white; text-align: center; border-radius: 5px; width: 130px; height: 28px; background-color: rgb(12, 85, 154); border-style: solid;
+    }
+    .Java-Skill-Bar-Border{
+        border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
+    }
+    .Java-Skill-Bar{
+        font-size: 15px; color: white; text-align: center; border-radius: 5px; width: 230px; height: 28px; background-color: rgb(14, 126, 136); border-style: solid;
+    }
+    .HCJ-Skill-Bar-Border{
+        border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
+    }
+    .HCJ-Skill-Bar{
+        color: white; text-align: center; border-radius: 5px; width: 270px; height: 28px; background-color: rgb(234, 212, 44); border-style: solid;
+    }
+    .Python-Skill-Bar-Border{
+        border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
+    }
+    .Python-Skill-Bar{
+        color: white; text-align: center; border-radius: 5px; width: 290px; height: 28px; background-color: rgb(33, 102, 205); border-style: solid;
     }
 
-    html{
-        scroll-behavior: smooth;
+    .Fencing-Skill-Bar{
+        color: white; text-align: center; border-radius: 5px; width: 250px; height: 28px; background-color: rgb(49, 157, 148); border-style: solid;
+    }
+    .Fencing-Skill-Bar-Border{
+        border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
+    }
+    .Tennis-Skill-Bar{
+        color: white; text-align: center; border-radius: 5px; width: 130px; height: 28px; background-color: rgb(17, 175, 17); border-style: solid;
+    }
+    .Tennis-Skill-Bar-Border{
+        border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
+    }
+    .Guitar-Skill-Bar{
+        color: white; text-align: center;  border-radius: 5px; width: 160px; height: 28px; background-color: rgb(113, 67, 38); border-style: solid;
+    }
+    .Guitar-Skill-Bar-Border{
+        border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
     }
 
-    h1{
-        color: rgb(248, 248, 248);
-        font-size: 40px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-    }
+/*-------------------------------*/
+/* Footer*/
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(43, 43, 43);
+    color: white;
+}
 
-    #Welcome{
-        width: 100%;
-        height: 100%;
-        padding: 100%;
-        background-color: black;
-    }
+.FooterJDEV{
+    font-size: 15px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 30px;
+    width: 100%;
+}
 
-
-
-    .modal {
-        width: 900px;
-        height: 200px;
-        background-color: black;
-        border-radius: 5px;
-        border-color: rgb(87, 87, 87);
-        border-style: solid;
-        font-size: 20px;
-      }
-      
-      
-      @keyframes typing {
-        from{opacity: 100%;}
-        0% { width: 0;}
-        50% {width: 100%;}
-        55% {width: 100%;}
-        60% {width: 100%;}
-        100% {width: 100%;}
-
-      }
-
-      
-      .typing-animation {
-        overflow: hidden;
-        /*border-right: 0.08em solid #ffffff; /* Adjust the color and thickness as needed */
-        content:"!";
-        white-space: nowrap;
-        animation: typing 12s steps(100);
-        color: rgb(0, 159, 0);
-      }
-
-      @keyframes blink {
-        from, to {
-          opacity: 1;
+/*-------------------------------*/
+/* Mobile*/
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        body{
+            height: 150%;
+            overscroll-behavior: none;
+            background-color: rgb(35, 35, 35);
         }
-        50% {
-          opacity: 0;
-        }
-      }
-      
-      .typing-animation::after {
-        content: "|";
-        color: rgb(255, 255, 255);
-        animation: blink 1s infinite;
-      }
-
-      
-
-    .NavBar {
-        width: 100%;
-        background-color: rgb(43, 43, 43);
-        top: 0%;
-        left: 0%;
-        z-index: 900;
-        position: fixed;
-       
-    }
-
-    .Header{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-left: 160px;
-        padding-right: 160px;
-
-    }
-
-    .Logo{
-        text-align: left;
-        
-    }
-
-    button{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-color: transparent;
-        border: none;
-        outline: none;
-        color: white;
-        justify-content: space-between;
-        
-
-    }
-
-    .A{
-        font-size: 20px;
-
-    }
-
-    a{
-        text-decoration: none;
-        color: inherit;
-
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    .A :hover{
-        color: inherit;
-        text-decoration: line-through;
-        padding-left: 5px;
-        padding-right: 5px;
-        color: black;
-    }
-
-    h5{
-        color:white;
-        font-size: 30px;
-    }
-
-    .quoteGen{
-        padding-left: 10%;
-        padding-top: 5%;
-        height: 400px;
-        background-image: linear-gradient(rgb(129, 129, 129), rgb(85, 207, 251));
-    }
-
-    .Buttons{
-        font-size: 20px;
-    }
-
-
-    .WelcomePage{
-        padding: 10%;
-        color:white;
-        
-    }
-
-    .WelcomeBox{
-        border-style: solid;
-        width: 300px;
-        height: 60px;
-        text-align: center;
-        border-radius: 5px;
-    }
-
-    .WelcomeBox :hover{
-        background-color: black;
-        color: aqua;
-    }
-
-    #AboutMe{
-        color: white;
-        padding: 10%;
-    }
     
-    footer{
-        width: 100%;
-        height: 230px;
-        background-color: rgb(43, 43, 43);
-        font-size: 15px;
-        color: white;
+        html{
+            scroll-behavior: smooth;
+        }
+    
+        h1{
+            color: rgb(248, 248, 248);
+            font-size: 30px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+    
+        #Welcome{
+            width: 100%;
+            height: 100%;
+            padding: 100%;
+            background-color: black;
+        }
+    
+    
+    
+        .modal {
+            width: 400px;
+            height: 120px;
+            background-color: black;
+            border-radius: 5px;
+            border-color: rgb(87, 87, 87);
+            border-style: solid;
+            font-size: 20px;
+          }
+          
+          
+          @keyframes typing {
+            from{opacity: 100%;}
+            0% { width: 0;}
+            50% {width: 100%;}
+            55% {width: 100%;}
+            60% {width: 100%;}
+            100% {width: 100%;}
+    
+          }
+          
+          .typing-animation {
+            overflow: hidden;
+            content:"!";
+            white-space: nowrap;
+            animation: typing 12s steps(100);
+            color: rgb(0, 159, 0);
+          }
+    
+          @keyframes blink {
+            from, to {
+              opacity: 1;
+            }
+            50% {
+              opacity: 0;
+            }
+          }
+          
+          .typing-animation::after {
+            content: "|";
+            color: rgb(255, 255, 255);
+            animation: blink 1s infinite;
+          }
+    
+        .NavBar {
+            width: 100%;
+            background-color: rgb(43, 43, 43);
+            top: 0%;
+            left: 0%;
+            z-index: 900;
+            position: fixed;
+           
+        }
+    
+        .Header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 10%;
+            padding-right: 10%;
+    
+        }
+    
+        .Logo{
+            text-align: left;
+            
+        }
+    
+        button{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            justify-content: space-between;
+        }
+    
+        .A{
+            font-size: 15px;
+    
+        }
+    
+        a{
+            text-decoration: none;
+            color: inherit;
+    
+            padding-left: 1px;
+            padding-right: 1px;
+        }
+    
+        .A :hover{
+            color: inherit;
+            text-decoration: line-through;
+            padding-left: 1px;
+            padding-right: 1px;
+            color: black;
+        }
+    
+        h5{
+            color:white;
+            font-size: 30px;
+        }
+    
+        .QutoeArea{
+            align-items: center;
+            align-content: center;
+            width: 100%;
+            padding-top: 5%;
+            height: 250px;
+            background-color: rgb(206, 206, 206);
+            text-align: center;
+            
+        }
+    
+        .Buttons{
+            font-size: 20px;
+        }
+    
+    
+        .WelcomePage{
+            padding: 10%;
+            color:white;
+            padding-top: 90px;
+            
+        }
+    
+        .WelcomeBox{
+            border-style: solid;
+            width: 280px;
+            height: 50px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 13px;
+        }
+    
+        .WelcomeBox :hover{
+            background-color: black;
+            color: aqua;
+        }
+    
+        #AboutMe{
+            color: white;
+            padding: 10%;
+        }
+        
+        footer{
+            width: 100%;
+            height: 160px;
+            background-color: rgb(43, 43, 43);
+            font-size: 15px;
+            color: white;
+    
+    
+        }
+    
+        
 
+        #quote-text{
+            font-size: 15px; 
+            color: white;
+        }
 
-    }
+        .quote-Header{
+            font-size: 25px;
+        }
 
-    .colum1{
-
-    }
-
-    .Colums{
-        align-items: center;
-        justify-content: space-between;
-        display: flex;
-        z-index: 900;
-        padding-left: 470px;
-        padding-right: 70px;
-    }
-
-    .ColumNum2{
-        align-items: center;
-        justify-content: space-between;
-        display: flex;
-        z-index: 900;
-        padding-right: 70px;
-    }
-
-    .FooterJDEV{
-    }
+        .AboutMe-Skill-Coding{
+            padding-top: 10px;
+    
+        }
+    
+        .AboutMe-Skill-Coding-Snippet{
+            width: 400px;
+            height: 450px;
+            background-color: rgb(206, 206, 206);
+            color: black;
+            border-radius: 15px;
+            border-style: solid;
+            padding-left: 2%;
+            
+        }
+    
+        .AboutMe-Skill-SM{
+            padding-top: 10px;
+    
+        }
+    
+        .AboutMe-Skill-SM-Snippet{
+            width: 400px;
+            height: 320px;
+            background-color: rgb(206, 206, 206);
+            color: black;
+            border-radius: 15px;
+            border-style: solid;
+            padding-left: 2%;
+            font-size: 20px;
+            
+        }
+    
+        .CSharp-Skill-Bar-Border{
+            border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
+        }
+        .CSharp-Skill-Bar{
+           color: white; text-align: center; border-radius: 5px; width: 330px; height: 28px; background-color: rgb(105, 5, 164); border-style: solid;
+        }
+        .C-Skill-Bar-Border{
+            border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
+        }
+        .C-Skill-Bar{
+           font-size: 11px; color: white; text-align: center; border-radius: 5px; width: 130px; height: 28px; background-color: rgb(12, 85, 154); border-style: solid;
+        }
+        .Java-Skill-Bar-Border{
+            border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
+        }
+        .Java-Skill-Bar{
+            font-size: 15px; color: white; text-align: center; border-radius: 5px; width: 230px; height: 28px; background-color: rgb(14, 126, 136); border-style: solid;
+        }
+        .HCJ-Skill-Bar-Border{
+            border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
+        }
+        .HCJ-Skill-Bar{
+            color: white; text-align: center; border-radius: 5px; width: 270px; height: 28px; background-color: rgb(234, 212, 44); border-style: solid;
+        }
+        .Python-Skill-Bar-Border{
+            border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
+        }
+        .Python-Skill-Bar{
+            color: white; text-align: center; border-radius: 5px; width: 290px; height: 28px; background-color: rgb(33, 102, 205); border-style: solid;
+        }
+    
+        .Fencing-Skill-Bar{
+            color: white; text-align: center; border-radius: 5px; width: 250px; height: 28px; background-color: rgb(49, 157, 148); border-style: solid;
+        }
+        .Fencing-Skill-Bar-Border{
+            border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
+        }
+        .Tennis-Skill-Bar{
+            color: white; text-align: center; border-radius: 5px; width: 130px; height: 28px; background-color: rgb(17, 175, 17); border-style: solid;
+        }
+        .Tennis-Skill-Bar-Border{
+            border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
+        }
+        .Guitar-Skill-Bar{
+            color: white; text-align: center;  border-radius: 5px; width: 160px; height: 28px; background-color: rgb(113, 67, 38); border-style: solid;
+        }
+        .Guitar-Skill-Bar-Border{
+            border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
+        }
+        
+    
+        footer{
+            width: 100%;
+            height: 200px;
+            background-color: rgb(43, 43, 43);
+            color: white;
+        }
+    
+        .FooterJDEV{
+            font-size: 15px;
+            text-align: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 30px;
+            width: 100%;
+        }
+      }
