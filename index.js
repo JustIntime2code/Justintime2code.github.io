@@ -80,3 +80,14 @@ function checkTime(i) {
   generateSelectionsButton.addEventListener("click", createSelections);
   createSelections();
 
+
+  var toggled = true;
+
+  function toggleMenu() {
+    var element = document.getElementById("Navbar-mobile-buttons");
+    
+    // Toggle visibility
+    toggled = !toggled;
+    element.style.display = toggled ? "block" : "none";
+  }
+

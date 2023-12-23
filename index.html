@@ -9,49 +9,81 @@
 </head>
 <body>
     <!-- Top Navbar -->
+    
+
     <div class = "NavBar">
+         <div id = "Navbar-mobile-buttons" class = "Navbar-mobile-buttons">
+                <div  style = "float: left;">
+                <ul style = " color:rgb(0, 0, 0); background-color: rgb(255, 255, 255); width: 1000%; height: 90px; font-size: 15px;">
+                    <a href = "index.html">Home</a>
+                    <a href = "Blog.html">Blog</a>
+                    <a href = "#AboutMe">About me</a>
+                    <a href = "#Services">Services</a>
+                    <a href = "Games.html">Games/App</a>
+                </ul>
+                </div>
+            </div>
         <div class = "Header">
             <div class = "logo">
-                <h1>JDev</h1>
+               <h1> <a href = "index.html">JDev</a></h1>
             </div>
+            <div class = "NavBar-mobile" >
+                <button style = "color:black; font-size: 50px; text-align: right; padding-left: 250px;" type = "button" onclick = "toggleMenu()">&#9776; </button>
+               
+            </div>
+                    
             <div class = "Buttons">
                 <button>
                     <div class = "A">
                         <a href = "index.html">Home</a>
                         <a href = "Blog.html">Blog</a>
                         <a href = "#AboutMe">About me</a>
-                        <a href = "Games.html">Games</a>
+                        <a href = "#Services">Services</a>
+                        <a href = "Games.html">Games/App</a>
                     </div>
                 </button>
             </div>
             <div class = "RightButtons">
                 <button>
-                    <div class = "A">
+                    <div class = "A2">
                         <a href = "https://github.com/JustinDevN/JustinDevN.github.io">Github</a>
                     </div>
                 </button>
             </div>
         </div>
+
     </div>
+    
+   
     <!-- Main Page -->
-    <div class = "mainPage">
         <div class = "WelcomePage">
+           
             <div class = "WelcomeBox">
-                <h2>Hello, My name is Justin N.</h2>
+                <h2>Hello, My name is Justin Nam</h2>
             </div>
-            <div class = "modal">
-                <p class = "typing-animation" id="typing-animation">Hello(안녕하새요)...</p>
+            <div class = "modal-Middle">
+                <div class = "Modal-Outline">
+                    <div class = "mac-button">
+                        <span style = "background-color: rgb(236, 106, 94);" class="dot"></span>
+                        <span style = "background-color: rgb(245, 191, 79);" class="dot"></span>
+                        <span style = "background-color: rgb(97, 197, 84);" class="dot"></span>
+                        
+                    </div>
+                    <div class = "modal">
+                        <p class = "typing-animation" id="typing-animation">Hello World(안녕하세요)...</p>
+                    </div>
+                </div>
             </div>
         </div>   
     </div>
     <div class = "QutoeArea">
         <h5 class = "quote-Header">My Motivational Quotes</h5>
-        <p id = "quote-text" >"The world is big, but your future is bigger."</p>
-        <p id = "quote-text" >"When you think it's over, it's only the beginning."</p>
+        <p style = "font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" id = "quote-text" >"The world is big, but your future is bigger."</p>
+        <p style = "font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" id = "quote-text" >"When you think it's over, it's only the beginning."</p>
     </div>
     <div id = "AboutMe">
         <h2>About Me</h2>
-        <p>Hello, my name is Justin Nam, and I am a student studying in the field of computer science, web design, and cyber security.</p>
+        <p><Hello>Hello</Hello>, my name is Justin Nam, and I am a student studying in the field of <CompSci>computer science</CompSci>; More specifically Software Engineering, Computer programming, and Cybersecurity. I love programming and enjoy creating new programs as well as updating already existing programs. I always enjoyed creating stuff but it was at the age of 8 when I first opened my eyes to the world of programming. The ability to create anything you dream of is very special to me. I also enjoy many other things like Fencing, Tennis, Web development, Engineering, Physics, Math, and music. Every one of these things I listed has begun somewhere and that's why I love trying out new things. Who knows what I might find next that would define my next journey?</p>
 
         <div class = "AboutMe-Skill-Coding">
             <h3>Coding Skills</h3>
@@ -79,7 +111,50 @@
                 <p>3. Guitar</p>
                 <div class = "Guitar-Skill-Bar-Border"><div class = "Guitar-Skill-Bar">Intermediate + 5 years</div></div>
             </div>
-        </div>               
+        </div>   
+    </div>
+
+    <div id = "Services">
+        <h5 style = " padding-top: 20px; color: black;">Choose the right Service that fit you</h5>
+        <div class = "Service-Container">
+            <div class = "Service-1">
+                <h5 style = "color: black;">Basic</h5>
+                <p style = "padding-left: 20px; padding-right: 20px;">The Basic plan offers the best website for almost everyone. This plan is great for personal things like portfolios, or homepages for small local businesses.</p>
+                <li>I will not pay for a Domain or hosting but will provide information on how to get your website files online for free and get a custom domain.</li>
+                <p>&check; CSS, HTML, JavaScript</p>
+                <p>&check; Static Website</p>
+                <p>&check; Fully responsive on Mobile and PC</p>
+                <p>&check; 5 Pages</p>
+                <h3>$50</h3>
+                <a href = "#">Try now</a>
+            </div>
+            <div class = "Service-1">
+                <h5 style = "color: black;">Intermediate</h5>
+                <p style = "padding-left: 20px; padding-right: 20px;">The Intermediate plan offers the best website for everyone. This plan is great for portfolios, homepages for small local businesses, Online eCommerce Sites, and Blogs.</p>
+                <li>I will not pay for a Domain or hosting but will provide information on how to get your website files online for free and get a custom domain.</li>
+                <p>&check; CSS, HTML, JavaScript</p>
+                <p>&check; Static Website</p>
+                <p>&check; Fully responsive on Mobile and PC</p>
+                <p>&check; 7 Pages</p>
+                <p>&check; Rest API additions like Stripe for payment and other rest API's</p>
+                <p>&check; Clean Code / Optimized code</p>
+                <h3>$70</h3>
+                <a href = "#">Try now</a>
+            </div>
+            <div class = "Service-1">
+                <h5 style = "color: black;">Premium</h5>
+                <p style = "padding-left: 20px; padding-right: 20px;">The Premium plan offers the best website for people who want to go all out on their website or a big private project. This plan is great for Online eCommerce Sites, Blogs, Online services, and Tutor sites.</p>
+                <li>I will not pay for a Domain or hosting but will provide information on how to get your website files online for free and get a custom domain.</li>
+                <p>&check; CSS, HTML, JavaScript, Bootstrap, Tailwind CSS</p>
+                <p>&check; Static Website</p>
+                <p>&check; Fully responsive on Mobile and PC</p>
+                <p>&check; 10 Pages</p>
+                <p>&check; Rest API additions like Stripe for payment and other rest API's</p>
+                <p>&check; Clean Code / Optimized code</p>
+                <h3>$100</h3>
+                <a href = "#">Try now</a>
+            </div>
+        </div>
     </div>
     <footer>
         <div class = "FooterJDEV">

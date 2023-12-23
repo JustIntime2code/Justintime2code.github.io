@@ -1,11 +1,21 @@
 /* Main*/
+@keyframes pulse{
+    0%, 100% {
+        background-color: rgb(12, 27, 41);
+    }
+    50%{
+        background-color: #081328;
+    }
+}
+
 body{
     height: 150%;
     overscroll-behavior: none;
-    background-color: rgb(35, 35, 35);
+    background-color: rgb(12, 27, 41);
     width: 100%;
     padding: 0;
     margin: 0;
+    animation: pulse 20s infinite;
 }
 
 html{
@@ -13,16 +23,62 @@ html{
 }
 
 h1{
-    color: rgb(248, 248, 248);
+    color: rgb(34, 78, 166);
     font-size: 40px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
+h5{
+    color:white;
+    font-size:40px;
+    text-align: center;
+}
+
+/*-------------------------------*/
+/* The Services side */
+
+#Services{
+
+    width: 100%;
+    height: 850px;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: space-between; 
+    
+
+}
+
+.Service-1{
+    width: 350px;
+    height: 620px;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    float: left;
+    justify-content: center;
+}
+
+.Service-Container :hover{
+    background-color: whitesmoke;
+}
+
+.Service-Container{
+        margin: auto;
+        width: 78%;
+        padding: 10px;
+        border-radius: 10px;
+        height: 78%;
+        background-color: rgb(238, 244, 254);
+}
+
 
 /*-------------------------------*/
 /* The Terminal Style Hello Box*/
 .modal {
     width: 800px;
-    height: 200px;
+    height: 400px;
     background-color: black;
     border-radius: 5px;
     border-color: rgb(87, 87, 87);
@@ -60,13 +116,56 @@ h1{
 
 /*-------------------------------*/
 /*Main Page*/
-.NavBar {
+
+#Navbar-mobile-buttons{
+    display: none;
+    position: fixed;
+    
+}
+
+.menu-btn{
+    color: rgb(0, 0, 0);
+}
+  
+.Navbar-mobile-buttons ul {
+    list-style-type: none;
+    background-color: #333;
+    padding: 0;
+  }
+
+  .Navbar-mobile-buttons{
+    
+    text-align: left;
+  }
+
+  .Navbar-mobile-buttons a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: left;
+    width: 40px;
+    height: 20px;
+  }
+
+  .Navbar-mobile-buttons a:hover {
+    color: rgb(30, 92, 164);
+  }
+  
+
+
+  .NavBar-mobile{
+    display: none;
+   }
+
+.NavBar{
     width: 100%;
-    background-color: rgb(43, 43, 43);
+    background-color: #ffffff;
     top: 0%;
     left: 0%;
     z-index: 900;
     position: fixed;
+    height: 100px;
+   
 }
 .Header{
     display: flex;
@@ -74,6 +173,7 @@ h1{
     justify-content: space-between;
     padding-left: 160px;
     padding-right: 160px;
+
 }
 .Logo{
     text-align: left;
@@ -83,11 +183,34 @@ button{
     background-color: transparent;
     border: none;
     outline: none;
-    color: white;
+    color: #000000;
     justify-content: space-between; 
 }
+
+.RightButtons{
+    background-color: rgb(19, 46, 61);
+    width: 90px;
+    height: 30px;
+    border-style: solid;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.RightButtons :hover{
+    background-color: rgb(36, 61, 75);
+}
+
+.A2{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight:600;
+}
+
 .A{
     font-size: 20px;
+    color: black;
+    font-weight:600;
 }
 a{
     text-decoration: none;
@@ -97,10 +220,11 @@ a{
 }
 .A :hover{
     color: inherit;
-    text-decoration: line-through;
+    text-decoration:none;
     padding-left: 5px;
     padding-right: 5px;
-    color: black;
+    color: rgb(30, 92, 164);
+    
 }
 h5{
     color:white;
@@ -132,17 +256,34 @@ h5{
 .WelcomePage{
     padding: 10%;
     color:white;
+    height: 530px;
 }
 .WelcomeBox{
-    border-style: solid;
-    width: 300px;
-    height: 60px;
     text-align: center;
-    border-radius: 5px;
 }
-.WelcomeBox :hover{
-    background-color: black;
-    color: aqua;
+
+.modal-Middle{
+  margin: auto;
+  width: 70%;
+}
+
+.Modal-Outline{
+    background-color: #3d3d3d;
+    width: 803px;
+    height: 35px;
+    border-radius: 5px;
+    border-color: rgb(87, 87, 87);
+    border-style: solid;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+
 }
 
 /*-------------------------------*/
@@ -151,6 +292,23 @@ h5{
     color: white;
     padding: 10%;
 }
+
+h2{
+    font-size: 30px;
+}
+
+#AboutMe Hello{
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(214, 247, 255);
+}
+
+#AboutMe CompSci{
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(181, 99, 45);
+}
+
 .AboutMe-Skill-Coding{
     padding-top: 10px;
 }
@@ -227,13 +385,14 @@ h5{
         border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
     }
 
+
 /*-------------------------------*/
 /* Footer*/
 footer{
     width: 100%;
     height: 200px;
-    background-color: rgb(43, 43, 43);
-    color: white;
+    background-image: linear-gradient(rgb(199, 200, 200), rgb(218, 218, 218));
+    color: rgb(0, 0, 0);
 }
 
 .FooterJDEV{
@@ -244,14 +403,32 @@ footer{
     width: 100%;
 }
 
+
 /*-------------------------------*/
 /* Mobile*/
     @media only screen and (max-width: 768px) {
         /* For mobile phones: */
+        .A{
+            font-size: 20px;
+            color: black;
+            font-weight:600;
+            display: none;
+
+        }
+
+        .mainPage
+        {
+            height: 10%;
+        }
+        
+          /* Hide other navbar items on smaller screens */
+
+
         body{
             height: 150%;
             overscroll-behavior: none;
-            background-color: rgb(35, 35, 35);
+            background-color: rgb(12, 27, 41);
+            overflow-x:hidden;
         }
     
         html{
@@ -259,7 +436,7 @@ footer{
         }
     
         h1{
-            color: rgb(248, 248, 248);
+            
             font-size: 30px;
             font-family:Verdana, Geneva, Tahoma, sans-serif;
         }
@@ -271,10 +448,61 @@ footer{
             background-color: black;
         }
     
-    
+        .modal-Middle{
+            margin: auto;
+            width: 70%;
+          }
+
+          #Services{
+
+            width: 100%;
+            height: 2150px;
+            background-color: rgb(255, 255, 255);
+            align-items: center;
+            justify-content: space-between; 
+            
+        
+        }
+        
+        .Service-1{
+            width: 350px;
+            height: 620px;
+            background-color: rgb(255, 255, 255);
+            border-style: solid;
+            border-color: white;
+            margin: 10px;
+            border-radius: 10px;
+            float: left;
+            justify-content: center;
+        }
+        
+        .Service-Container :hover{
+            background-color: whitesmoke;
+        }
+        
+        .Service-Container{
+                margin: auto;
+                width: 77%;
+                padding: 10px;
+                border-radius: 10px;
+                height: 90%;
+                background-color: rgb(238, 244, 254);
+        }
+          
+          .Modal-Outline{
+              background-color: #3d3d3d;
+              width: 303px;
+              height: 35px;
+              border-radius: 5px;
+              border-color: rgb(87, 87, 87);
+              border-style: solid;
+              font-size: 20px;
+              padding-top: 10px;
+          }
+          
     
         .modal {
-            width: 400px;
+            width: 303px;
             height: 120px;
             background-color: black;
             border-radius: 5px;
@@ -319,26 +547,30 @@ footer{
     
         .NavBar {
             width: 100%;
-            background-color: rgb(43, 43, 43);
+            background-color: rgb(255, 255, 255);
             top: 0%;
             left: 0%;
             z-index: 900;
             position: fixed;
            
         }
+
+        .NavBar-mobile{
+            display: block;
+        }
     
         .Header{
             display: flex;
-            align-items: center;
-            justify-content: space-between;
+            align-items: right;
+ 
             padding-left: 10%;
             padding-right: 10%;
-    
+            
         }
     
         .Logo{
             text-align: left;
-            
+            color: rgb(34, 78, 166);
         }
     
         button{
@@ -347,12 +579,15 @@ footer{
             border: none;
             outline: none;
             color: white;
-            justify-content: space-between;
         }
     
         .A{
             font-size: 15px;
-    
+            color:black;
+        }
+
+        .RightButtons{
+            display: none;
         }
     
         a{
@@ -368,7 +603,7 @@ footer{
             text-decoration: line-through;
             padding-left: 1px;
             padding-right: 1px;
-            color: black;
+            color: rgb(30, 92, 164);
         }
     
         h5{
@@ -385,6 +620,7 @@ footer{
             background-color: rgb(206, 206, 206);
             text-align: center;
             
+            
         }
     
         .Buttons{
@@ -395,22 +631,14 @@ footer{
         .WelcomePage{
             padding: 10%;
             color:white;
-            padding-top: 90px;
+            padding-top: 100px;
+            height: 400px;
             
         }
     
         .WelcomeBox{
-            border-style: solid;
-            width: 280px;
-            height: 50px;
+            font-size: 10px;
             text-align: center;
-            border-radius: 5px;
-            font-size: 13px;
-        }
-    
-        .WelcomeBox :hover{
-            background-color: black;
-            color: aqua;
         }
     
         #AboutMe{
@@ -432,7 +660,7 @@ footer{
 
         #quote-text{
             font-size: 15px; 
-            color: white;
+            color: rgb(0, 0, 0);
         }
 
         .quote-Header{
@@ -526,7 +754,7 @@ footer{
         footer{
             width: 100%;
             height: 200px;
-            background-color: rgb(43, 43, 43);
+            background-color: rgb(18, 31, 60);
             color: white;
         }
     
