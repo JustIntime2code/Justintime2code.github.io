@@ -77,7 +77,7 @@ h5{
 /*-------------------------------*/
 /* The Terminal Style Hello Box*/
 .modal {
-    width: 800px;
+    width: 803px;
     height: 400px;
     background-color: black;
     border-radius: 5px;
@@ -97,6 +97,7 @@ h5{
     overflow: hidden;
     content:"!";
     white-space: nowrap;
+    display: block;
     animation: typing 12s steps(100);
     color: rgb(0, 159, 0);
 }
@@ -131,10 +132,18 @@ h5{
     list-style-type: none;
     background-color: #333;
     padding: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    padding-top: 100px;
+    background-color: white;
+    overflow-y: hidden;
+    scroll-behavior: none;
+    font-size: 20px;
   }
 
   .Navbar-mobile-buttons{
-    
+
     text-align: left;
   }
 
@@ -143,8 +152,8 @@ h5{
     color: rgb(0, 0, 0);
     text-decoration: none;
     text-align: left;
-    width: 40px;
-    height: 20px;
+    width: 100px;
+    height: 30px;
   }
 
   .Navbar-mobile-buttons a:hover {
@@ -269,7 +278,7 @@ h5{
 
 .Modal-Outline{
     background-color: #3d3d3d;
-    width: 803px;
+    width: 804px;
     height: 35px;
     border-radius: 5px;
     border-color: rgb(87, 87, 87);
@@ -428,7 +437,6 @@ footer{
             height: 150%;
             overscroll-behavior: none;
             background-color: rgb(12, 27, 41);
-            overflow-x:hidden;
         }
     
         html{
@@ -451,12 +459,13 @@ footer{
         .modal-Middle{
             margin: auto;
             width: 70%;
+            padding-right: 100px;
           }
 
           #Services{
 
             width: 100%;
-            height: 2150px;
+            height: 2390px;
             background-color: rgb(255, 255, 255);
             align-items: center;
             justify-content: space-between; 
@@ -465,8 +474,8 @@ footer{
         }
         
         .Service-1{
-            width: 350px;
-            height: 620px;
+            width: 270px;
+            height: 690px;
             background-color: rgb(255, 255, 255);
             border-style: solid;
             border-color: white;
@@ -673,7 +682,7 @@ footer{
         }
     
         .AboutMe-Skill-Coding-Snippet{
-            width: 400px;
+            width: 330px;
             height: 450px;
             background-color: rgb(206, 206, 206);
             color: black;
@@ -689,7 +698,7 @@ footer{
         }
     
         .AboutMe-Skill-SM-Snippet{
-            width: 400px;
+            width: 330px;
             height: 320px;
             background-color: rgb(206, 206, 206);
             color: black;
@@ -701,53 +710,53 @@ footer{
         }
     
         .CSharp-Skill-Bar-Border{
-            border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
+            border-radius: 5px; width: 300px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
         }
         .CSharp-Skill-Bar{
-           color: white; text-align: center; border-radius: 5px; width: 330px; height: 28px; background-color: rgb(105, 5, 164); border-style: solid;
+           color: white; text-align: center; border-radius: 5px; width: 210px; height: 28px; background-color: rgb(105, 5, 164); border-style: solid;
         }
         .C-Skill-Bar-Border{
-            border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
+            border-radius: 5px; width: 300px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
         }
         .C-Skill-Bar{
-           font-size: 11px; color: white; text-align: center; border-radius: 5px; width: 130px; height: 28px; background-color: rgb(12, 85, 154); border-style: solid;
+           font-size: 11px; color: white; text-align: center; border-radius: 5px; width: 70px; height: 28px; background-color: rgb(12, 85, 154); border-style: solid;
         }
         .Java-Skill-Bar-Border{
-            border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
+            border-radius: 5px; width: 300px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
         }
         .Java-Skill-Bar{
-            font-size: 15px; color: white; text-align: center; border-radius: 5px; width: 230px; height: 28px; background-color: rgb(14, 126, 136); border-style: solid;
+            font-size: 11px; color: white; text-align: center; border-radius: 5px; width: 170px; height: 28px; background-color: rgb(14, 126, 136); border-style: solid;
         }
         .HCJ-Skill-Bar-Border{
-            border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
+            border-radius: 5px; width: 300px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
         }
         .HCJ-Skill-Bar{
-            color: white; text-align: center; border-radius: 5px; width: 270px; height: 28px; background-color: rgb(234, 212, 44); border-style: solid;
+            color: white; text-align: center; border-radius: 5px; width: 210px; height: 28px; background-color: rgb(234, 212, 44); border-style: solid;
         }
         .Python-Skill-Bar-Border{
-            border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
+            border-radius: 5px; width: 300px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
         }
         .Python-Skill-Bar{
-            color: white; text-align: center; border-radius: 5px; width: 290px; height: 28px; background-color: rgb(33, 102, 205); border-style: solid;
+            color: white; text-align: center; border-radius: 5px; width: 230px; height: 28px; background-color: rgb(33, 102, 205); border-style: solid;
         }
     
         .Fencing-Skill-Bar{
-            color: white; text-align: center; border-radius: 5px; width: 250px; height: 28px; background-color: rgb(49, 157, 148); border-style: solid;
+            color: white; text-align: center; border-radius: 5px; width: 190px; height: 28px; background-color: rgb(49, 157, 148); border-style: solid;
         }
         .Fencing-Skill-Bar-Border{
-            border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
+            border-radius: 5px; width: 300px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
         }
         .Tennis-Skill-Bar{
-            color: white; text-align: center; border-radius: 5px; width: 130px; height: 28px; background-color: rgb(17, 175, 17); border-style: solid;
+            font-size: 12px; color: white; text-align: center; border-radius: 5px; width: 90px; height: 28px; background-color: rgb(17, 175, 17); border-style: solid;
         }
         .Tennis-Skill-Bar-Border{
-            border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
+            border-radius: 5px; width: 300px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
         }
         .Guitar-Skill-Bar{
-            color: white; text-align: center;  border-radius: 5px; width: 160px; height: 28px; background-color: rgb(113, 67, 38); border-style: solid;
+            font-size: 12px; color: white; text-align: center;  border-radius: 5px; width: 100px; height: 28px; background-color: rgb(113, 67, 38); border-style: solid;
         }
         .Guitar-Skill-Bar-Border{
-            border-radius: 5px; width: 360px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
+            border-radius: 5px; width: 300px; height: 30px; background-color: rgb(255, 255, 255); border-style: solid;
         }
         
     

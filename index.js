@@ -85,9 +85,11 @@ function checkTime(i) {
 
   function toggleMenu() {
     var element = document.getElementById("Navbar-mobile-buttons");
+    var element2 = document.getElementById("typing-animation");
     
     // Toggle visibility
     toggled = !toggled;
     element.style.display = toggled ? "block" : "none";
+    element2.style.display = toggled ? "none" : "block";
   }
 

@@ -1,139 +1,405 @@
-    body{
-        height: 150%;
-        overscroll-behavior: none;
-        background-color: rgb(35, 35, 35);
-    }
-
-    .A :hover{
-        color: inherit;
-        text-decoration: line-through;
-        padding-left: 5px;
-        padding-right: 5px;
-        color: black;
-    }
-
-    html{
-        scroll-behavior: smooth;
-    }
-
-    h1{
-        color: rgb(214, 214, 214);
-        font-size: 40px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    .NavBar {
-        width: 100%;
-        background-color: rgb(43, 43, 43);
-        top: 0%;
-        left: 0%;
-        z-index: 900;
-        position: fixed;
-       
-    }
-
-    .Header{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-left: 160px;
-        padding-right: 160px;
-
-    }
-
-    .Logo{
-        text-align: left;
-        
-    }
-
-    button{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-color: transparent;
-        border: none;
-        outline: none;
-        color: white;
-        justify-content: space-between;
-        
-
-    }
-
-    .RightButtons{
-
-       
-    }
-
-    .A{
-        font-size: 20px;
-        
-    }
-
-    a{
-        text-decoration: none;
-        color: inherit;
-        
-        
-    }
-
-    .Buttons{
-        font-size: 20px;
-    }
 
 
-    .WelcomePage{
-        color:white;
-        float: left;
+.readmorebutton :hover{
+    background-color: black;
+    color:white;
+}
 
-        
-
-    }
-
+.Logo{
+    text-align: left;
     
-    footer{
-        width: 100%;
-        height: 230px;
-        background-color: rgb(43, 43, 43);
-        font-size: 15px;
-        color: white;
-        bottom: 0%;
-    }
+}
 
-    .BlogPost{
-        width: 250px;
-        height: 60px;
-        padding-bottom: 240px;
+figcaption{
+    font-size: 20px;
+    color: rgb(71, 157, 255);
+    font-weight: bold;
+}
 
-        float:left;
-    }
+.BlogPost{
+    font-size: 13px;
+}
 
+.BlogPost{
+    width: 250px;
+    height: 190px;
+    padding-bottom: 240px;
+    border-style: solid;
+    float:left;
+}
+
+
+
+.image{
+    width: 230px;
+    height: 230px;
+    border-radius: 10px;
+}
+
+body{
+    height: 150%;
+    overscroll-behavior: none;
+    background-color: rgb(12, 27, 41);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    animation: pulse 20s infinite;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    color: rgb(34, 78, 166);
+    font-size: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h5{
+    color:white;
+    font-size:40px;
+    text-align: center;
+}
+
+/*-------------------------------*/
+/*Main Page*/
+
+#Navbar-mobile-buttons{
+    display: none;
+    position: fixed;
+    
+}
+
+.menu-btn{
+    color: rgb(0, 0, 0);
+}
+  
+.Navbar-mobile-buttons ul {
+    list-style-type: none;
+    background-color: #333;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    padding-top: 100px;
+    background-color: white;
+    overflow-y: hidden;
+    scroll-behavior: none;
+    font-size: 20px;
+  }
+
+  .Navbar-mobile-buttons{
+
+    text-align: left;
+  }
+
+  .Navbar-mobile-buttons a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: left;
+    width: 100px;
+    height: 30px;
+  }
+
+  .Navbar-mobile-buttons a:hover {
+    color: rgb(30, 92, 164);
+  }
+  
+
+
+  .NavBar-mobile{
+    display: none;
+   }
+
+.NavBar{
+    width: 100%;
+    background-color: #ffffff;
+    top: 0%;
+    left: 0%;
+    z-index: 900;
+    position: fixed;
+    height: 100px;
    
+}
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 160px;
+    padding-right: 160px;
 
-    .image{
-        width: 250px;
-        height: 250px;
-    }
+}
+.Logo{
+    text-align: left;
+}
+button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #000000;
+    justify-content: space-between; 
+}
 
-    .MainPage{
-        height: 900px;
-        width: 100%;
+.RightButtons{
+    background-color: rgb(19, 46, 61);
+    width: 90px;
+    height: 30px;
+    border-style: solid;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 5px;
+}
 
-    }
+.RightButtons :hover{
+    background-color: rgb(36, 61, 75);
+}
 
-    .MainPageHolder{
-        padding-top: 8%;
-        padding-left: 10%;
-        padding-right: 10%;
+.A2{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight:600;
+}
+
+.A{
+    font-size: 20px;
+    color: black;
+    font-weight:600;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.A :hover{
+    color: inherit;
+    text-decoration:none;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: rgb(30, 92, 164);
+    
+}
+h5{
+    color:white;
+    font-size: 30px;
+}
+
+.Buttons{
+    font-size: 20px;
+}
+.WelcomePage{
+    padding: 10%;
+    color:white;
+    height: 530px;
+}
+.WelcomeBox{
+    text-align: center;
+}
+
+/*-------------------------------*/
+/* About Me*/
+
+h2{
+    font-size: 30px;
+}
+
+/*-------------------------------*/
+/* Footer*/
+footer{
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(rgb(199, 200, 200), rgb(218, 218, 218));
+    color: rgb(0, 0, 0);
+}
+
+.FooterJDEV{
+    font-size: 15px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 30px;
+    width: 100%;
+}
+
+
+/*-------------------------------*/
+/* Mobile*/
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        .A{
+            font-size: 20px;
+            color: black;
+            font-weight:600;
+            display: none;
+
+        }
+
+        .mainPage
+        {
+            height: 10%;
+        }
         
-    }
+          /* Hide other navbar items on smaller screens */
 
-    .colum1{
 
-    }
+        body{
+            height: 150%;
+            overscroll-behavior: none;
+            background-color: rgb(12, 27, 41);
+        }
+    
+        html{
+            scroll-behavior: smooth;
+        }
+    
+        h1{
+            
+            font-size: 30px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+    
+        #Welcome{
+            width: 100%;
+            height: 100%;
+            padding: 100%;
+            background-color: black;
+        }
+    
+        .modal-Middle{
+            margin: auto;
+            width: 70%;
+            padding-right: 100px;
+          }
+        .NavBar {
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            top: 0%;
+            left: 0%;
+            z-index: 900;
+            position: fixed;
+           
+        }
 
-    .Colums{
-        align-items: center;
-        justify-content: space-between;
-        display: flex;
-        z-index: 900;
-        padding-left: 470px;
-        padding-right: 70px;
-    }
+        .NavBar-mobile{
+            display: block;
+        }
+    
+        .Header{
+            display: flex;
+            align-items: right;
+ 
+            padding-left: 10%;
+            padding-right: 10%;
+            
+        }
+    
+        .Logo{
+            text-align: left;
+            color: rgb(34, 78, 166);
+        }
+    
+        button{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: white;
+        }
+    
+        .A{
+            font-size: 15px;
+            color:black;
+        }
+
+        .RightButtons{
+            display: none;
+        }
+    
+        a{
+            text-decoration: none;
+            color: inherit;
+    
+            padding-left: 1px;
+            padding-right: 1px;
+        }
+    
+        .A :hover{
+            color: inherit;
+            text-decoration: line-through;
+            padding-left: 1px;
+            padding-right: 1px;
+            color: rgb(30, 92, 164);
+        }
+    
+        h5{
+            color:white;
+            font-size: 30px;
+        }
+    
+        .QutoeArea{
+            align-items: center;
+            align-content: center;
+            width: 100%;
+            padding-top: 5%;
+            height: 250px;
+            background-color: rgb(206, 206, 206);
+            text-align: center;
+            
+            
+        }
+    
+        .Buttons{
+            font-size: 20px;
+        }
+    
+    
+        .WelcomePage{
+            padding: 10%;
+            color:white;
+            padding-top: 100px;
+            height: 400px;
+            
+        }
+    
+        .WelcomeBox{
+            font-size: 10px;
+            text-align: center;
+        }
+    
+        #AboutMe{
+            color: white;
+            padding: 10%;
+        }
+        
+        footer{
+            width: 100%;
+            height: 160px;
+            background-color: rgb(43, 43, 43);
+            font-size: 15px;
+            color: white;
+    
+    
+        }
+    
+        
+
+
+        
+    
+        footer{
+            width: 100%;
+            height: 200px;
+            background-color: rgb(18, 31, 60);
+            color: white;
+        }
+    
+        .FooterJDEV{
+            font-size: 15px;
+            text-align: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 30px;
+            width: 100%;
+        }
+      }
